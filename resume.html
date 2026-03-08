@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме - Мельничук Сергій</title>
+    <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Мельничук Сергій Володимитрович</h1>
+            <p>Email: melnuchuk22@gmail.com</p>
+            <p>18 років | с. Новоставці</p>
+        </header>
+        
+        <section>
+            <h2>Навички (натисніть на квадрат)</h2>
+            <ul class="skills-grid">
+                <li onclick="showDetails('HTML — це мова розмітки, яка створює скелет кожної сторінки в інтернеті.')">HTML</li>
+                <li onclick="showDetails('CSS — мова стилів, яка робить сайт красивим, додає кольори та анімації.')">CSS</li>
+                <li onclick="showDetails('VS Code — найпопулярніший редактор коду з тисячами корисних плагінів.')">VS Code</li>
+                <li onclick="showDetails('VS (Visual Studio) — потужне середовище для розробки великих проектів на C# та C++.')">VS</li>
+                <li onclick="showDetails('Git — система, яка зберігає історію твого коду та дозволяє працювати в команді.')">Git</li>
+                <li onclick="showDetails('UI Design — проектування зовнішнього вигляду кнопок, меню та вікон.')">UI Design</li>
+                <li onclick="showDetails('React — сучасна бібліотека для створення швидких та динамічних інтерфейсів.')">React</li>
+                <li onclick="showDetails('C++ — мова для створення ігор, операційних систем та швидкого софту.')">C++</li>
+                <li onclick="showDetails('C# — головна мова для розробки ігор на движку Unity та програм Windows.')">C#</li>
+                <li onclick="showDetails('Java — мова для розробки серверів та мобільних додатків на Android.')">Java</li>
+                <li onclick="showDetails('JS — робить сайт живим: обробляє кліки, валідує форми та створює логіку.')">Java Script</li>
+            </ul>
+        </section>
+
+        <div id="info-box">Натисніть на будь-яку навичку, щоб прочитати опис...</div>
+    </div>
+
+    <script>
+        function showDetails(text) {
+            const box = document.getElementById('info-box');
+            box.innerText = text;
+            box.style.display = 'block'; // показуємо блок
+            box.style.backgroundColor = '#f0ebf8'; // додаємо фоновий колір
+        }
+    </script>
+</body>
+</html>
